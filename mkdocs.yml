@@ -5,6 +5,11 @@ theme:
   font:
     text: roboto
     code: arial
+  icon:
+    logo: fontawesome/brands/markdown 
+    favicon: fontawesome/brands/markdown
+  features:
+    - navigation.footer  
   palette:
     # Dark Mode
     - scheme: slate
@@ -21,3 +26,32 @@ theme:
         name: Light mode
       primary: blue
       accent: deep orange
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details  
+
+extra:
+  social:
+    - icon: material/github
+      link: https://youtube.com/
+    - icon: material/github
+      link: https://linkedin.com/
+
+copyright: Copyright &copy; 2025 Nishant Cherukuri
